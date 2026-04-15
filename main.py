@@ -15,7 +15,7 @@ def buy(message):
 @bot.message_handler(commands=['paid'])
 def paid(message):
     bot.send_message(message.chat.id, "Спасибо за оплату! Вот твой гайд 👇")
-    doc = open('Гайд обновлен.pdf','rb'
+    doc = open('Гайд обновлен.pdf','rb')
     bot.send_document(message.chat.id, doc)
 
 bot.polling()
